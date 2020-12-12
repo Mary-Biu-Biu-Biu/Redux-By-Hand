@@ -29,6 +29,8 @@ const createStore = function (reducer, initState) {
         return state
     }
 
+    changeState({})
+
     return {
         subscribe,
         changeState,

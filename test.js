@@ -12,13 +12,14 @@ const reducer = combineReducers({ reducer1: reducer1, reducer2: reducer2 })
 
 // 创建初始状态
 // 更新2：新增不同reducer对应的key,以及对应的value
+// 更新3：把state拆分到各自的reducer区块中，而不是合并写在一起
 const state = {
-    reducer1: {
-        count: 1,
-    },
-    reducer2: {
-        message: '',
-    },
+    // reducer1: {
+    //     count: 1,
+    // },
+    // reducer2: {
+    //     message: '',
+    // },
 }
 
 // 使用初始状态，创建store
