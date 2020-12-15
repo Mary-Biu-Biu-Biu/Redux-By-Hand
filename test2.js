@@ -1,5 +1,5 @@
 // 更改后，检查之前的用法是否还支持
-const redux = require("./Redux")
+const redux = require("./src/Redux")
 const createStore = redux.createStore
 
 // 使用唯一的state
