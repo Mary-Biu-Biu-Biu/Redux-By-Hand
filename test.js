@@ -1,5 +1,5 @@
 // 使用node语法导入redux文件中的函数
-const redux = require("./redux")
+const redux = require("./src/Redux")
 const createStore = redux.createStore
 const combineReducers = redux.combineReducers
 const applyMiddleware = redux.applyMiddleware
@@ -13,8 +13,8 @@ const exceptionMiddleware = require("./sampleMiddlewares/exceptionMiddleware")
     .exceptionMiddleware
 
 // 导入不同逻辑的reducer
-const reducer1 = require("./reducer-1").reducer1
-const reducer2 = require("./reducer-2").reducer2
+const reducer1 = require("./sampleReducers/reducer-1").reducer1
+const reducer2 = require("./sampleReducers/reducer-2").reducer2
 
 // 更新2：根据key合并reducer
 const reducer = combineReducers({ reducer1: reducer1, reducer2: reducer2 })
